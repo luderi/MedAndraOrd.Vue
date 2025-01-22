@@ -70,7 +70,6 @@ export default {
     },
     startGame() {
       // Log the selected wordlist to debug
-      console.log("Selected Wordlist:", this.selectedWordList);
 
       // Dynamically create teams based on the number of teams selected
       const teams = Array.from({ length: this.numberOfTeams }, (v, i) => ({

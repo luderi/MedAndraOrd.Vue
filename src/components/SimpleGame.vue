@@ -162,6 +162,7 @@ export default {
     startGame() {
       this.startCountdown();
       this.resetRecentWords();
+      this.skippedWords = 0;
     },
     startCountdown() {
       if (this.timer) {
