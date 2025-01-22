@@ -83,7 +83,7 @@ export default {
       this.time = routeState.time || 20; // Default to 10 if not provided
       this.selectedWordList = routeState.selectedWordList || "mainlist"; // Default to 10 if not provided
       this.numberOfSkipWords = routeState.numberOfSkipWords || "1000";
-      this.minusPointsForSkip = routeState.minusPointsForSkip || "false";
+      this.minusPointsForSkip = routeState.minusPointsForSkip;
 
       // Load the selected wordlist
       this.wordList = this.wordLists[this.selectedWordList] || [];
