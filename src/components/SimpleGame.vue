@@ -120,8 +120,14 @@ export default {
       }
     },
     randomWordFunction() {
+      if (this.wordList.length === 0) {
+        // Handle the case when all words have been used
+        this.currentWord = "**Slut på ord**";
+        return;
+      }
       const randomIndex = Math.floor(Math.random() * this.wordList.length);
       this.currentWord = this.wordList[randomIndex];
+      this.wordList.splice(randomIndex, 1); // Remove the used word from the array
       this.animateWord = true;
     },
     resetAnimation() {
